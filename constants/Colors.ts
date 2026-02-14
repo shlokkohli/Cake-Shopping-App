@@ -4,6 +4,7 @@ export const Colors = {
         textSecondary: '#687076',
         primary: '#FF8C42',
         primaryPressed: '#E07A38',
-        primaryDisabled: '#FFCCAB'
+        primaryDisabled: '#FFCCAB',
+        textError: 'red'
     }
 } as const;

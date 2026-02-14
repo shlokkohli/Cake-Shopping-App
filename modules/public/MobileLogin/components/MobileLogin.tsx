@@ -96,8 +96,7 @@ const styles = StyleSheet.create({
     gap: 30,
     width: '100%',
     justifyContent: 'space-between',
-    paddingHorizontal: 30,
-    paddingVertical: 30
+    padding: 30,
   },
   innerHeader: {
     gap: 12,

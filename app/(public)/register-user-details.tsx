@@ -1,18 +1,8 @@
-import { StyleSheet, Text, View } from "react-native";
+import RegisterUserDetails from "@/modules/public/RegisterUserDetails/components/RegisterUserDetails";
 
 export default function registerUserDetailsScreen() {
 
   return (
-    <View style={styles.container}>
-      <Text>This is OTP user details page</Text>
-    </View>
+    <RegisterUserDetails />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
-})
