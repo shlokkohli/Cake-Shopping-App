@@ -1,6 +1,9 @@
 export const Typography = {
     // font sizes
     size: {
+        s: 14,
+        m: 16,
+        l: 22,
         xl: 35,
     },
     // font weights

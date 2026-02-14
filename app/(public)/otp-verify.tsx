@@ -1,18 +1,8 @@
-import { StyleSheet, Text, View } from "react-native";
+import OtpVerify from "@/modules/public/OtpVerify/components/OtpVerify";
 
 export default function otpVerifyScreen() {
 
   return (
-    <View style={styles.container}>
-      <Text>This is OTP verify page</Text>
-    </View>
+    <OtpVerify />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
-})

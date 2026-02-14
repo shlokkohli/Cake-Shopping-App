@@ -1,5 +1,9 @@
 export const Colors = {
     light: {
-        text: '#00000'
+        textPrimary: '#000000',
+        textSecondary: '#687076',
+        primary: '#FF8C42',
+        primaryPressed: '#E07A38',
+        primaryDisabled: '#FFCCAB'
     }
-}
+} as const;
