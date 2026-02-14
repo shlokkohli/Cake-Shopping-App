@@ -26,36 +26,45 @@ export default function MobileLogin() {
             >
                 {/* headers */}
                 <View style={styles.header}>
-                    <Image
-                        source={Images.heart.redHeartImage}
-                        style={styles.heartLogo}
-                    />
-                    <Text style={styles.heading}>
-                        Nice to see you!
-                    </Text>
-                    <Text style={styles.description}>
-                        Welcome to Cakes&More, enter your mobile number to get started
+
+                    <View style={styles.innerHeader}>
+
+                        <View>
+                            <Image
+                                source={Images.heart.redHeartImage}
+                                style={styles.heartLogo}
+                            />
+                            <Text style={styles.heading}>
+                                Nice to see you!
+                            </Text>
+                        </View>
+
+                        <Text style={styles.description}>
+                            Welcome to Cakes&More, enter your mobile number to get started
+                        </Text>
+                    </View>
+
+
+                    {/* input section */}
+                    <View style={styles.inputSection}>
+                        <Text style={styles.mobileInputLabel}>
+                            Mobile Number
+                        </Text>
+                        <TextInput
+                            style={styles.mobileInputBox}
+                            keyboardType="phone-pad"
+                            maxLength={10}
+                            value={mobileNumber}
+                            onChangeText={setMobileNumber}
+                        />
+                    </View>
+            
+                    {/* terms and conditions */}
+                    <Text style={styles.termsConatiner}>
+                        Your mobile number is safe with us. We only use it for authentication.
                     </Text>
                 </View>
         
-                {/* input section */}
-                <View style={styles.inputSection}>
-                    <Text style={styles.mobileInputLabel}>
-                        Mobile Number
-                    </Text>
-                    <TextInput
-                        style={styles.mobileInputBox}
-                        keyboardType="phone-pad"
-                        maxLength={10}
-                        value={mobileNumber}
-                        onChangeText={setMobileNumber}
-                    />
-                </View>
-        
-                {/* terms and conditions */}
-                <Text style={styles.termsConatiner}>
-                    Your mobile number is safe with us. We only use it for authentication.
-                </Text>
         
                 {/* button */}
                 <Pressable
@@ -85,12 +94,16 @@ const styles = StyleSheet.create({
   innerContainer: {
     flex: 1,
     gap: 30,
-    justifyContent: 'center',
     width: '100%',
-    padding: 30,
+    justifyContent: 'space-between',
+    paddingHorizontal: 30,
+    paddingVertical: 30
+  },
+  innerHeader: {
+    gap: 12,
   },
   header: {
-    gap: 8,
+    gap: 20,
   },
   heartLogo: {
     height: 50,
