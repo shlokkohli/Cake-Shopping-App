@@ -16,29 +16,22 @@ export default function RegisterUserDetails() {
     const router = useRouter();
 
     const handleContinue = () => {
-        if(!firstName || !lastName){
-            setError('Both fields are mandatory!');
-        }
+      if(!firstName || !lastName){
+        setError('Both fields are mandatory!');
+      }
+
+      router.replace('/(protected)/(tabs)/home')
     }
 
   return (
     <SafeAreaView style={styles.container}>
         <KeyboardAvoidingView
-            style={styles.innerContainer}
-            behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+          style={styles.innerContainer}
+          behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
         >
-
-            {/* back button */}
-
-            {/* name section */}
+          
+          {/* name section */}
             <View style={styles.nameSection}>
-
-                <Pressable
-                    style={styles.backButton}
-                    onPress={() => router.back()}
-                >
-                <Ionicons name="arrow-back" size={24} color={Colors.light.textPrimary} />
-                </Pressable>
 
                 <View style={styles.headingSection}>
                     <Text style={styles.heading}>
