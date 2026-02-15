@@ -77,7 +77,10 @@ export default function MobileLogin() {
                         }
                     ]}
                 >
-                    <Text style={styles.buttonText}>
+                    <Text style={[
+                        styles.buttonText,
+                        (!isValid && { color: Colors.light.textSecondary })
+                    ]}>
                         Continue
                     </Text>
                 </Pressable>
