@@ -1,4 +1,4 @@
-import CustomerHeader from "@/components/CustomHeader";
+import CustomerHeader from "@/src/components/CustomHeader";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Tabs } from "expo-router";
 
