@@ -1,4 +1,4 @@
-import Profile from "@/modules/protected/Profile/Components/Profile";
+import Profile from "@/src/modules/protected/Profile/Components/Profile";
 
 export default function ProfileScreen() {
     

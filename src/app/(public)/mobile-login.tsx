@@ -1,4 +1,4 @@
-import MobileLogin from "@/modules/public/MobileLogin/components/MobileLogin";
+import MobileLogin from "@/src/modules/public/MobileLogin/components/MobileLogin";
 
 export default function mobileLoginScreen() {
 

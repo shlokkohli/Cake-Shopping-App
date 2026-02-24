@@ -8,8 +8,16 @@ export default function RootLayout() {
     <SafeAreaProvider>
       <StatusBar style="dark" />
       <Stack>
-        <Stack.Screen name="(public)" options={{ headerShown: false }} />
-        <Stack.Screen name="(protected)" options={{ headerShown: false }} />
+
+        {/* if guard is true, then this screen can be accesses */}
+        <Stack.Protected guard={false}>
+          <Stack.Screen name="(public)" options={{ headerShown: false }} />
+        </Stack.Protected>
+
+        <Stack.Protected guard={true}>
+          <Stack.Screen name="(protected)" options={{ headerShown: false }} />
+        </Stack.Protected>
+
       </Stack>
     </SafeAreaProvider>
   )
