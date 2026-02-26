@@ -39,7 +39,9 @@ export async function setSession(session: Session) {
 // remove the token for user logout
 export async function clearSession() {
     try {
+
         await SecureStore.deleteItemAsync(SESSION_KEY);
+        
     } catch (error) {
         console.log('clearSession error', error);
         return null;
