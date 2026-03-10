@@ -23,7 +23,7 @@ export const useAuthStore = create<AuthStore>((set) => ({
 
     restoreSession: async() => {
         // first check user token
-        const token = null;
+        const token = 12;
         if(token){
             set({ isAuthenticated: true });
         } else {

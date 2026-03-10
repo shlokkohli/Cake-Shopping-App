@@ -21,7 +21,7 @@ export default function RootLayout() {
     if(!isLoading){
       SplashScreen.hideAsync();
     }
-  }, [isLoading])
+  }, [isLoading]);
 
   if(isLoading){
     return null;

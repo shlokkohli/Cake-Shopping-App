@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <View>
             <Text>
-                This is Home Screen
+                new home screen
             </Text>
         </View>
     )

@@ -1,12 +1,14 @@
-import CustomerHeader from "@/src/components/CustomHeader";
+import CustomHeader from "@/src/components/CustomHeader";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Tabs } from "expo-router";
 
 export default function TabsLayout() {
+
     return (
         <Tabs
             screenOptions={{
-                header: () => <CustomerHeader />
+                header: (props) => <CustomHeader {...props}/>,
+                headerStyle: { height: 100 },
             }}
         >
             <Tabs.Screen
