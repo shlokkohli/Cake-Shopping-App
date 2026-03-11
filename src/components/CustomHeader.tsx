@@ -30,7 +30,8 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.light.primary,
         justifyContent: 'flex-end',
         alignItems: 'center',
-        padding: 15
+        paddingHorizontal: 25,
+        paddingVertical: 10
     },
     title: {
         fontSize: Typography.size.l,

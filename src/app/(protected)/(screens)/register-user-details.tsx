@@ -1,4 +1,4 @@
-import RegisterUserDetails from "@/src/modules/public/RegisterUserDetails/components/RegisterUserDetails";
+import RegisterUserDetails from "@/src/modules/protected/RegisterUserDetails/components/RegisterUserDetails";
 
 export default function registerUserDetailsScreen() {
 
