@@ -31,12 +31,12 @@ const styles = StyleSheet.create({
         paddingBottom: 10
     },
     imageStyle: {
-        height: 120,
+        height: 100,
         width: 120,
         borderRadius: 30
     },
     title: {
-        fontSize: Typography.size.s,
-        fontWeight: Typography.weight.bold
+        fontSize: 14,
+        fontWeight: Typography.weight.medium
     }
 })
